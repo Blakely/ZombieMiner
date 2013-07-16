@@ -55,8 +55,8 @@ SPRITE_TEMPLATE=[[['0'],['^0']], #standing
                 [['4','5','6','7'],['^4','^5','^6','^7']]] #axing
 FIRE_TEMPLATE=[[['0','1','2','^1','3','^2','0','3','2']]] #uses a template/spriteset so it can have duplicates of frames 
 #sprite animation delay "bases"
-SPRITE_FRAME_DELAY = 100 #delay between frames
-SPRITE_ACT_DELAY = 50 #delay between acts
+SPRITE_FRAME_DELAY = 800 #delay between frames
+SPRITE_ACT_DELAY = 400 #delay between acts
 SPRITE_MASK_DELAY = 200 #delay between mask ani frames
 
 #miner statistic constants
@@ -68,13 +68,13 @@ STAT_BAG = 'bag' #players current bag (list)
 STAT_ORIGINAL_BAG='origBag' #the original bag size assigned to the player at game runtime
 
 #player constants
-PLAYER_STATS = {STAT_SP:1,STAT_STR:1,STAT_MAXBAG:4,STAT_MONEY:40} #player initial stats
-PLAYER_STARTPOS = (3,4) #players initial position
+PLAYER_STATS = {STAT_SP:1,STAT_STR:1,STAT_MAXBAG:4,STAT_MONEY:0} #player initial stats
+PLAYER_STARTPOS = (4,4) #players initial position
 
 #zombie constants
 ZOMBIE_NUM=10 #number of zombies
-ZOMBIE_STR=0.1 #zombie base str
-ZOMBIE_SP=0.1 #zombie base sp
+ZOMBIE_STR=0.01 #zombie base str
+ZOMBIE_SP=0.03 #zombie base sp
 
 #special mines (tiles)
 MINE_DUG = 21
